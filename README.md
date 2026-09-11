@@ -65,5 +65,19 @@ target extended-remote localhost:3333
 monitor reset init
 continue
 
+To-do:
+1) make this connect via visual studio code and document the process
+1.1) Well it turns out that the VS Code SDK is configured in a way that the picotool, openocd and maybe gdb are actually contained within the sdk folder that it creates when installing the plugin to VSCode. It works, to nothing to tweak here, as of yet :)
+
+2) make a stand-alone project, without VS Code, using the sdk which is mostly libraries for the pico, the picotool, the openocd and the gdb, to see how this works under the hood.
+
+Some Info on what to study up:
+- dude builds a debugger (in rust, but the concepts are valid for C): https://www.timdbg.com/posts/
+- another dude made this thing using pi pico and C (yay): https://qcentlabs.com/posts/swd_banger/
+- PI PICO Getting Started Guide: https://pip-assets.raspberrypi.com/categories/610-raspberry-pi-pico/documents/RP-008276-DS-2-getting-started-with-pico.pdf
+- PI PICO C/C++ SDK Documentation (800+ pages): https://pip-assets.raspberrypi.com/categories/609-microcontroller-boards/documents/RP-009085-KB-4-raspberry-pi-pico-c-sdk.pdf
+
+
+
 
 
